@@ -56,7 +56,7 @@ const Forms = () => {
             PostSurveyed(values);
             setSuccess(true);
 
-            navigate(`/cardPage`);
+            navigate(`/`);
           }}
         >
           {({ errors }) => (
@@ -104,7 +104,7 @@ const Forms = () => {
                           id={item.name}
                           name={item.name}
                           required={item.required}
-                        ></Field>
+                        />
                         <div className="text-red-600 text-xs">
                           <ErrorMessage name={item.name}>
                             {errors.name}
