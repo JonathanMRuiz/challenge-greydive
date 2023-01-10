@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Details from "../components/Details";
+import Details from "../components/Detail";
 import { getSurveyedById } from "../hooks/useSurveyedById";
 
-const CardPage = () => {
+const CardDetails = () => {
   const [item, setItem] = useState([]);
   const { id } = useParams();
 
@@ -17,7 +17,7 @@ const CardPage = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="h-[825px]">
       <Details
         name={item?.full_name}
         email={item?.email}
@@ -29,4 +29,4 @@ const CardPage = () => {
   );
 };
 
-export default CardPage;
+export default CardDetails;

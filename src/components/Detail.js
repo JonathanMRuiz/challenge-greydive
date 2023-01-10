@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+
 const Details = ({ name, email, country, terms, birth }) => {
-  // bg-[#0a192f]
   return (
     <div className=" flex  flex-col  md:flex-row justify-center  flex-wrap gap-3 mt-10  ">
       <div className="">
@@ -44,3 +45,11 @@ const Details = ({ name, email, country, terms, birth }) => {
 };
 
 export default Details;
+
+Details.propTypes = {
+  name: PropTypes.string,
+  email: PropTypes.string,
+  country: PropTypes.string,
+  birth: PropTypes.string,
+  terms: PropTypes.bool,
+};

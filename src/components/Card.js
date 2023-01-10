@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function Card({ id, response }) {
   return (
@@ -28,3 +29,10 @@ function Card({ id, response }) {
 }
 
 export default Card;
+
+Card.propTypes = {
+  id: PropTypes.string,
+  response: PropTypes.shape({
+    full_name: PropTypes.string,
+  }),
+};

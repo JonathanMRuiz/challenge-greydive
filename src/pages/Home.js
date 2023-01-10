@@ -5,9 +5,8 @@ import { useGetSurveyed } from "../hooks/useGetSurveyed";
 const Home = () => {
   const response = useGetSurveyed();
 
-  console.log(response?.length);
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col h-[825px]">
       <div className="flex justify-center">
         <h1 className="text-white">Encuestados: {response?.length}</h1>
       </div>
