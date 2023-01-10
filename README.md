@@ -39,3 +39,23 @@ Las variables tienen que ser completadas con los datos que proporciona Firebase 
 `REACT_APP_MEASUREMENT_ID`
 
 ![App Screenshot](https://parzibyte.me/blog/wp-content/uploads/2021/11/Configurar-SDK-de-Firebase-con-firebaseConfig.png)
+
+## Demo
+
+La aplicación fue deployada en Vercel.
+
+https://challenge-greydive-kappa-ecru.vercel.app/
+
+## 🛠 Skills
+
+Tecnologias utilizadas:
+
+ReactJS
+
+Javascript
+
+Tailwind CSS
+
+PropTypes
+
+Formik
