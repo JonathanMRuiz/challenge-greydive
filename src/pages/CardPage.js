@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-const CardPage = ({ items }) => {
+import Details from "../components/Details";
+import { getSurveyedById } from "../hooks/useSurveyedById";
+
+const CardPage = () => {
+  const [item, setItem] = useState([]);
   const { id } = useParams();
 
-  console.log(id);
+  useEffect(() => {
+    const getById = async () => {
+      const res = await getSurveyedById(id);
+      setItem(res);
+    };
+
+    getById();
+  }, [id]);
+
   return (
     <div>
-      {items.map((item) => (
-        <div key={id}>
-          <p>{item?.name}</p>
-          <p>{item?.email}</p>
-          <p>{item?.country}</p>
-        </div>
-      ))}
+      <Details
+        name={item?.full_name}
+        email={item?.email}
+        country={item?.country_of_origin}
+        terms={item?.terms_and_conditions}
+        birth={item?.birth_date}
+      />
     </div>
   );
 };
