@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Challenge Greydive
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Realizar una app en React.js que lea el siguiente archivo JSON y genere con cada ítem una interfaz de app de encuesta (como Google Forms).
+En cuanto a diseño y estética tiene que diferir de Google Forms. Puedes utilizar cualquier librería que creas necesaria.
 
-## Available Scripts
+Las respuestas de la encuesta deben ser enviadas a una base de datos de Firebase.
+Dicha base de datos tiene que ser de su propiedad. No nos compartas acceso a la base de datos.
 
-In the project directory, you can run:
+Por último, traé las respuestas de la base de datos ya mencionada y mostralas en la misma app pero en otra ruta. Al presionar “enviar” en el formulario tiene que aparecer un mensaje y el acceso a esa ruta en donde estarán las respuesta s. El diseño y estética queda a libre elección.
 
-### `npm start`
+## Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El proyecto esta realizado con `create-react-app`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para poder instalar las dependencias de la aplicación debera abrir el proyecto en su terminal e ingresar :
 
-### `npm test`
+```bash
+  npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Environment Variables
 
-### `npm run build`
+En la carpeta raiz del proyecto se encuentra un archivo `.example.env` el cual esta listo para utilizarse borrando la extension `.example` y quedando un archivo llamado `.env`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Las variables tienen que ser completadas con los datos que proporciona Firebase al crear la base de datos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`REACT_APP_API_KEY`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`REACT_APP_AUTH_DOMAIN`
 
-### `npm run eject`
+`REACT_APP_PROJECT_ID`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`REACT_APP_STORAGE_BUCKET`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`REACT_APP_MESSAGING_SENDER_ID`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`REACT_APP_APP_ID`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`REACT_APP_MEASUREMENT_ID`
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![App Screenshot](https://parzibyte.me/blog/wp-content/uploads/2021/11/Configurar-SDK-de-Firebase-con-firebaseConfig.png)
