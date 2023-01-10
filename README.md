@@ -8,6 +8,12 @@ Dicha base de datos tiene que ser de su propiedad. No nos compartas acceso a la 
 
 Por último, traé las respuestas de la base de datos ya mencionada y mostralas en la misma app pero en otra ruta. Al presionar “enviar” en el formulario tiene que aparecer un mensaje y el acceso a esa ruta en donde estarán las respuesta s. El diseño y estética queda a libre elección.
 
+## Demo
+
+La aplicación fue deployada en Vercel.
+
+https://challenge-greydive-kappa-ecru.vercel.app/
+
 ## Instalación
 
 El proyecto esta realizado con `create-react-app`.
@@ -39,12 +45,6 @@ Las variables tienen que ser completadas con los datos que proporciona Firebase 
 `REACT_APP_MEASUREMENT_ID`
 
 ![App Screenshot](https://parzibyte.me/blog/wp-content/uploads/2021/11/Configurar-SDK-de-Firebase-con-firebaseConfig.png)
-
-## Demo
-
-La aplicación fue deployada en Vercel.
-
-https://challenge-greydive-kappa-ecru.vercel.app/
 
 ## 🛠 Skills
 
